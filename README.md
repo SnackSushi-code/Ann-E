@@ -4,6 +4,18 @@ Ann-E is a personal AI assistant project focused on combining artificial intelli
 
 The project is designed to provide practical assistance with technical problem-solving, programming, engineering workflows, and knowledge management. Its architecture emphasizes modularity, context retention, and integration with external tools and AI model providers.
 
+## Project Documentation
+
+The GitHub repository is the canonical source of truth for Ann-E development. All durable project decisions, implementation notes, tests, security findings, and releases must be documented here.
+
+- [Master Development Plan](./MASTER_PLAN.md) — product vision, architecture, requirements, and roadmap.
+- [AI Collaboration Rules](./AI_COLLABORATION.md) — instructions for ChatGPT, Gemini, and contributors working in this repository.
+- [Changelog](./CHANGELOG.md) — durable record of project changes.
+
+**Canonical repository:** https://github.com/SnackSushi-code/Ann-E
+
+Before making changes, inspect the current source, tests, and documentation. The master plan describes target requirements; it does not imply that every feature is already implemented.
+
 ## Project Objectives
 
 - Develop a reliable AI runtime with support for multiple model providers.
