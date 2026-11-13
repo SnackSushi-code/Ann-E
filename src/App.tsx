@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { invoke } from "@tauri-apps/api/core";
+import GeminiPanel from "./GeminiPanel";
 
 type RuntimeStatus = {
   application: string;
@@ -42,9 +43,9 @@ function App() {
   const runtimeDescription = {
     checking: "Waiting for the local Rust runtime to respond.",
     connected:
-      "The local Rust runtime is connected. Model providers and computer-control tools are not connected in this build.",
+      "The local Rust runtime is connected. Computer-control tools are not enabled in this build.",
     unavailable:
-      "The desktop shell is open, but the local Rust runtime did not respond. Model providers and computer-control tools are not connected in this build.",
+      "The desktop shell is open, but the local Rust runtime did not respond. Computer-control tools are not enabled in this build.",
   }[runtimeState];
 
   return (
@@ -57,7 +58,7 @@ function App() {
             <span>ENGINEERING AI</span>
           </span>
         </a>
-        <div className="build-label">WINDOWS DESKTOP · FIRST BUILD</div>
+        <div className="build-label">WINDOWS DESKTOP · GEMINI PREVIEW</div>
       </header>
 
       <main id="home" className="workspace">
@@ -78,7 +79,7 @@ function App() {
           <div className="foundation-content">
             <div>
               <h2 id="foundation-title">A small, solid foundation.</h2>
-              <p>{runtimeDescription}</p>
+              <p>{runtimeDescription} Gemini requests are sent only when you ask or test the connection.</p>
             </div>
             <div
               className={`runtime-status runtime-status--${runtimeState}`}
@@ -91,9 +92,11 @@ function App() {
           </div>
           <div className="foundation-footer">
             <span>LOCAL DESKTOP CORE</span>
-            <span>NO PROVIDER OR COMPUTER ACCESS ENABLED</span>
+            <span>COMPUTER ACCESS IS NOT ENABLED</span>
           </div>
         </section>
+
+        <GeminiPanel />
 
         <footer className="workspace-footer">
           <span>Built to keep the user in control.</span>

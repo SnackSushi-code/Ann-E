@@ -37,7 +37,7 @@ describe("Ann-E desktop shell", () => {
     expect(await screen.findByText("Local runtime connected")).toBeTruthy();
     expect(
       screen.getByText(
-        "The local Rust runtime is connected. Model providers and computer-control tools are not connected in this build.",
+        "The local Rust runtime is connected. Computer-control tools are not enabled in this build. Gemini requests are sent only when you ask or test the connection.",
       ),
     ).toBeTruthy();
     expect(invokeMock).toHaveBeenCalledWith("get_runtime_status");

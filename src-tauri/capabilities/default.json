@@ -1,9 +1,14 @@
 {
   "$schema": "../gen/schemas/desktop-schema.json",
   "identifier": "default",
-  "description": "Allows the main window to request local runtime status.",
+  "description": "Allows the main window to check the runtime and use the Gemini provider commands.",
   "windows": ["main"],
   "permissions": [
-    "allow-get-runtime-status"
+    "allow-get-runtime-status",
+    "allow-get-gemini-key-status",
+    "allow-save-gemini-api-key",
+    "allow-clear-gemini-api-key",
+    "allow-test-gemini-connection",
+    "allow-chat-with-gemini"
   ]
 }

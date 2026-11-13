@@ -1,0 +1,11 @@
+# Automatically generated - DO NOT EDIT!
+
+[[permission]]
+identifier = "allow-test-gemini-connection"
+description = "Enables the test_gemini_connection command without any pre-configured scope."
+commands.allow = ["test_gemini_connection"]
+
+[[permission]]
+identifier = "deny-test-gemini-connection"
+description = "Denies the test_gemini_connection command without any pre-configured scope."
+commands.deny = ["test_gemini_connection"]

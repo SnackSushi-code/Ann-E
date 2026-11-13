@@ -8,7 +8,7 @@ The goal is to create an assistant that understands ongoing work, retains useful
 
 The first Windows desktop build uses Tauri, React, TypeScript, and a small Rust core. Its main window asks the local Rust process for a status and shows whether that connection is ready. This is a starting point for the app, not a provider-connected assistant yet.
 
-Model providers, project memory, file access, browser access, and computer-control tools are not enabled in this build. The webview can call one Rust command: `get_runtime_status`.
+The first Gemini provider preview is now available. You can save a key to Windows Credential Manager, test it with a real Gemini request, and send a prompt. The key is handled by the local Rust process; the app does not save it in browser storage or in the repository. Other providers, project memory, file access, browser access, and computer-control tools are not enabled.
 
 ## Run on Windows
 
@@ -27,7 +27,10 @@ Run the checks from the repository root:
 npm test
 npm run build
 cargo test --manifest-path src-tauri/Cargo.toml
+cargo fmt --manifest-path src-tauri/Cargo.toml -- --check
 ```
+
+For a step-by-step explanation of the key and request flow, see [Following the first Gemini request](docs/learning/first-gemini-request.md). GitHub Actions runs the same checks and a Windows desktop build for pull requests and pushes to `main` or `codex/**` branches.
 
 ## What Ann-E Aims to Become
 
