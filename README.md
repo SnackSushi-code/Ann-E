@@ -17,21 +17,6 @@ Ann-E is intended to bring several connected capabilities into one system:
 
 These are project goals, not claims that every capability is already available. Features will be considered complete only when they have been implemented and verified.
 
-## How the Project Is Developed
-
-Ann-E is being built incrementally, with an emphasis on understanding the existing code before changing it. Work should be divided into clear phases and manageable tasks. Each phase should have a defined purpose, expected outcomes, and criteria for determining whether it is complete.
-
-GitHub is the record of the engineering process—not just a place to store the finished code. Issues should capture bugs, questions, and proposed improvements. Pull requests should explain the problem being addressed, the approach taken, the files changed, and the results of review and testing. When a phase is completed, its documentation should summarize:
-
-- The purpose and scope of the phase.
-- What was investigated and implemented.
-- Bugs, failures, and unexpected findings.
-- The root causes identified and the fixes applied.
-- Tests performed and their actual results.
-- Remaining limitations, risks, and follow-up work.
-
-This history should make it possible to understand not only what Ann-E does, but how it was built, why decisions were made, what went wrong, and how each issue was resolved. ChatGPT, Gemini, and other contributors should work from the same repository, review the current code before making changes, and keep their work traceable through branches, pull requests, commits, and test evidence.
-
 ## Project Status
 
 Ann-E is under active development. The current implementation, architecture, and technology choices will be assessed as work progresses. Planned features must remain clearly distinguished from partially implemented, implemented, and tested functionality.
