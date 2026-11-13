@@ -1,46 +1,38 @@
-# Ann-E | Engineering AI Assistant
+# Ann-E | Engineering AI
 
-Ann-E is a personal AI assistant project focused on combining artificial intelligence, software development, and computer engineering into a single extensible platform.
+Ann-E is an ambitious personal AI assistant project focused on bringing software development, computer engineering, research, and everyday technical work into one adaptable system.
 
-The project is designed to provide practical assistance with technical problem-solving, programming, engineering workflows, and knowledge management. Its architecture emphasizes modularity, context retention, and integration with external tools and AI model providers.
+The long-term goal is to build an assistant that can understand ongoing projects, retain useful context, work with different AI models, and use authorized tools to help carry tasks through from planning to testing. Rather than being limited to a single chat interface or model provider, Ann-E is being designed as a modular platform that can grow as new capabilities are developed.
 
-## Project Documentation
+## Vision
 
-The GitHub repository is the canonical source of truth for Ann-E development. All durable project decisions, implementation notes, tests, security findings, and releases must be documented here.
+Ann-E is intended to bring together several connected capabilities:
 
-- [Master Development Plan](./MASTER_PLAN.md) — product vision, architecture, requirements, and roadmap.
-- [AI Collaboration Rules](./AI_COLLABORATION.md) — instructions for ChatGPT, Gemini, and contributors working in this repository.
-- [Changelog](./CHANGELOG.md) — durable record of project changes.
+- **Multi-model AI:** Work with providers such as OpenAI and Google Gemini, allowing models to contribute independently, review one another's work, and help investigate problems.
+- **Persistent memory:** Retain relevant conversations, project decisions, and task history so work can continue across sessions and, eventually, across different computers.
+- **The Colony:** Provide a visual environment for specialized AI agents, showing what they are working on, how tasks are progressing, and when a worker needs input or approval.
+- **Extensible integrations:** Use an installable plugin system to connect services and development tools, including GitHub and compatible MCP integrations.
+- **Engineering and development support:** Assist with programming, debugging, embedded systems, technical research, documentation, and engineering workflows.
+- **Voice and desktop interaction:** Develop natural voice communication, browser automation, and carefully controlled interaction with authorized desktop applications.
 
-**Canonical repository:** https://github.com/SnackSushi-code/Ann-E
+These capabilities represent the direction of the project. Their implementation and availability will evolve as development progresses.
 
-Before making changes, inspect the current source, tests, and documentation. The master plan describes target requirements; it does not imply that every feature is already implemented.
+## Development Approach
 
-## Project Objectives
+Ann-E is being developed incrementally. Existing functionality should be understood and tested before it is changed, and new capabilities should be introduced in manageable, verifiable steps.
 
-- Develop a reliable AI runtime with support for multiple model providers.
-- Implement context management and persistent memory.
-- Build tools for programming and engineering-related tasks.
-- Integrate with applications such as MATLAB, KiCad, and LabVIEW.
-- Develop voice interaction and a user-friendly interface.
-- Support automated workflows and specialized tool execution.
+GitHub is the working record of the development process. Issues and pull requests should capture bugs, feature requests, investigation findings, proposed changes, code reviews, and fixes. Commits should make the history of implementation clear. Tests and relevant results should be recorded so that changes can be reviewed and problems can be traced back to their cause.
 
-## Technology
+The goal is not simply to document the finished product. It is to preserve the engineering work behind it: what was attempted, what failed, how problems were diagnosed, what was changed, and how the result was verified.
 
-- **Languages:** Python, JavaScript
-- **AI Integration:** Google Gemini and modular model providers
-- **Runtime:** Custom Python-based AI runtime
-- **Testing:** Pytest
-- **Integrations:** Engineering software and external tools
+## Project Status
 
-## Development
+Ann-E is under active development. The architecture, feature set, and technology choices may change as the existing runtime is evaluated and the system is built out. Planned capabilities should not be considered implemented until they are present in the codebase and have been tested.
 
-Ann-E is actively being developed, with ongoing work focused on runtime reliability, AI integration, tool execution, and memory management. The project follows a modular development approach to make future features and integrations easier to maintain and expand.
+## Long-Term Goal
 
-## Long-Term Vision
-
-The goal is to develop a capable, adaptable engineering assistant that can support both everyday tasks and complex technical workflows while continuously expanding its capabilities.
+The long-term goal is to create a dependable, extensible engineering assistant that can support complex projects, coordinate specialized AI agents, connect to useful tools, and maintain continuity across devices—all while keeping the user in control of access, permissions, and important decisions.
 
 ---
 
-*Ann-E is an independent software development project. Features and integrations are subject to change as development progresses.*
+*Ann-E is an independent development project. Features and integrations are subject to change as the project evolves.*
