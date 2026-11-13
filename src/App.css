@@ -1,0 +1,281 @@
+:root {
+  font-family: "Segoe UI", "Aptos", sans-serif;
+  color: #18212b;
+  background: #f2f4f3;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-optical-sizing: auto;
+  font-weight: 400;
+
+  --ink: #18212b;
+  --muted: #64717b;
+  --line: #dce3e2;
+  --teal: #14665f;
+  --teal-soft: #e0f0eb;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+}
+
+button,
+a {
+  font: inherit;
+}
+
+.app-shell {
+  min-height: 100vh;
+  background:
+    radial-gradient(ellipse at 84% 2%, rgba(206, 228, 221, 0.42), transparent 33rem),
+    #f2f4f3;
+}
+
+.topbar {
+  height: 82px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 clamp(24px, 6vw, 88px);
+  border-bottom: 1px solid rgba(210, 220, 219, 0.8);
+  background: rgba(250, 251, 250, 0.74);
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.brand-mark {
+  width: 38px;
+  height: 38px;
+  display: grid;
+  place-items: center;
+  border-radius: 12px;
+  background: #183a3a;
+  color: #f4c77a;
+  font-family: Georgia, serif;
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.brand-copy {
+  display: grid;
+  gap: 2px;
+}
+
+.brand-copy strong {
+  font-size: 16px;
+  letter-spacing: -0.03em;
+}
+
+.brand-copy span,
+.build-label,
+.eyebrow,
+.foundation-footer {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+}
+
+.brand-copy span {
+  color: #73817f;
+  letter-spacing: 0.12em;
+}
+
+.build-label {
+  color: #778481;
+}
+
+.workspace {
+  width: min(100% - 48px, 940px);
+  margin: 0 auto;
+  padding: clamp(62px, 11vh, 112px) 0 28px;
+}
+
+.intro {
+  max-width: 640px;
+  margin-bottom: 48px;
+}
+
+.eyebrow {
+  margin: 0;
+  color: var(--teal);
+}
+
+.intro h1 {
+  max-width: 620px;
+  margin: 18px 0 14px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(42px, 6vw, 68px);
+  font-weight: 400;
+  letter-spacing: -0.055em;
+  line-height: 1.04;
+}
+
+.intro-copy {
+  max-width: 520px;
+  margin: 0;
+  color: var(--muted);
+  font-size: 17px;
+  line-height: 1.65;
+}
+
+.foundation-card {
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.78);
+  box-shadow: 0 18px 50px rgba(34, 57, 57, 0.055);
+}
+
+.foundation-topline {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  padding: 25px 30px 22px;
+  border-bottom: 1px solid #e8edeb;
+}
+
+.foundation-icon {
+  width: 34px;
+  height: 34px;
+  display: grid;
+  place-items: center;
+  border-radius: 11px;
+  background: #f5ead5;
+  color: #77572a;
+  font-family: Georgia, serif;
+  font-size: 13px;
+}
+
+.foundation-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+  padding: 27px 30px 32px;
+}
+
+.foundation-content h2 {
+  margin: 0 0 8px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 25px;
+  font-weight: 400;
+  letter-spacing: -0.035em;
+}
+
+.foundation-content p {
+  max-width: 520px;
+  margin: 0;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.65;
+}
+
+.runtime-status {
+  min-width: 220px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 14px;
+  border: 1px solid #d5e7e0;
+  border-radius: 11px;
+  background: #f3faf7;
+  color: #285e53;
+  font-size: 12px;
+  font-weight: 650;
+}
+
+.runtime-status--checking {
+  border-color: #e7e0ce;
+  background: #fbf8f0;
+  color: #75633b;
+}
+
+.runtime-status--unavailable {
+  border-color: #efd9d5;
+  background: #fff6f4;
+  color: #8d443a;
+}
+
+.status-dot {
+  width: 8px;
+  height: 8px;
+  flex: 0 0 auto;
+  border-radius: 50%;
+  background: #398775;
+}
+
+.runtime-status--checking .status-dot {
+  background: #b28b3f;
+}
+
+.runtime-status--unavailable .status-dot {
+  background: #bb6456;
+}
+
+.foundation-footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 17px 30px;
+  border-top: 1px solid #e8edeb;
+  color: #75817f;
+  font-size: 9px;
+  letter-spacing: 0.11em;
+}
+
+.workspace-footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  margin-top: 26px;
+  color: #85908f;
+  font-size: 11px;
+}
+
+@media (max-width: 680px) {
+  .topbar {
+    height: 72px;
+    padding-inline: 20px;
+  }
+
+  .build-label {
+    max-width: 130px;
+    text-align: right;
+    line-height: 1.5;
+  }
+
+  .workspace {
+    width: min(100% - 40px, 940px);
+    padding-top: 62px;
+  }
+
+  .foundation-topline,
+  .foundation-content,
+  .foundation-footer {
+    padding-inline: 20px;
+  }
+
+  .foundation-content,
+  .foundation-footer,
+  .workspace-footer {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .runtime-status {
+    min-width: 0;
+  }
+}
