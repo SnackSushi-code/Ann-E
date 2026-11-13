@@ -41,7 +41,7 @@ The Cargo failure was caused by restricted network access, not by a Rust source 
 - `cargo fmt --manifest-path src-tauri/Cargo.toml -- --check`: passed.
 - `cargo test --locked --manifest-path src-tauri/Cargo.toml`: passed, 7 provider unit tests and 1 existing runtime integration test.
 - `npm run tauri -- build --no-bundle`: passed on Windows and produced `src-tauri/target/release/ann-e.exe`. This did not package an installer.
-- GitHub Actions has been added but has not yet run for this update. Its result will be recorded after GitHub reports it.
+- GitHub Actions run #3 for implementation commit `ea2ab3f` completed successfully on a Windows runner. Frontend tests/build, Rust formatting/tests, and the Tauri desktop build all passed.
 - I did not send a real Gemini request because no API key was configured for this test. The live provider path and this Windows account's credential-store behavior still need a user-key check in the app.
 
 ## 6. Remaining limitations, risks, and follow-up work
