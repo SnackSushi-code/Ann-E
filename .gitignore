@@ -1,0 +1,163 @@
+﻿# =============================================================================
+# ANN-E SECURITY-FIRST GITIGNORE
+# Priority 1: Prevent accidental staging of untracked secrets, credentials, and keys
+# Note: .gitignore only filters untracked file paths; it does not block 'git add -f'
+# or scan inside tracked source files.
+# =============================================================================
+
+# Environment Variables & Secrets (NEVER COMMIT)
+.env
+.env.*
+*.env
+*.env.*
+.envrc
+.envrc.*
+!/.env.example
+
+# Cryptographic Keys, Certificates & SSH/Cloud Directories
+.ssh/
+.aws/
+.gcp/
+.azure/
+*.pem
+*.key
+*.pfx
+*.p12
+*.crt
+*.der
+*.csr
+*.jks
+*.keystore
+id_rsa*
+id_ed25519*
+id_ecdsa*
+id_dsa*
+*.ppk
+
+# Secret, Credential, Token, API Key & Password Files Across Formats
+*.secret
+*.secrets
+*.properties.secret
+*secret*.json
+*secret*.yaml
+*secret*.yml
+*secret*.toml
+*secret*.ini
+*secret*.cfg
+*secret*.conf
+*secret*.properties
+*secret*.xml
+*secret*.txt
+*credential*
+*api-key*
+*apikey*
+*api_key*
+*.token
+*.tokens
+*token*.json
+*token*.yaml
+*token*.yml
+*token*.toml
+*token*.ini
+*token*.cfg
+*token*.conf
+*token*.properties
+*token*.xml
+*token*.txt
+*.password
+*.passwords
+*password*.json
+*password*.yaml
+*password*.yml
+*password*.toml
+*password*.ini
+*password*.cfg
+*password*.conf
+*password*.properties
+*password*.xml
+*password*.txt
+.netrc
+.pypirc
+.npmrc
+
+# Local Databases, Persistent Memory Stores & SQLite Sidecars
+*.db
+*.db-*
+*.db-journal
+*.db-shm
+*.db-wal
+*.sqlite
+*.sqlite-*
+*.sqlite-journal
+*.sqlite-shm
+*.sqlite-wal
+*.sqlite3
+*.sqlite3-*
+*.sqlite3-journal
+*.sqlite3-shm
+*.sqlite3-wal
+data/
+memory_store/
+
+# Python Virtual Environments & Bytecode
+.venv/
+venv/
+ENV/
+env/
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Testing, Coverage & Security Audit Artifacts
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+.hypothesis/
+.mypy_cache/
+.ruff_cache/
+bandit_report.*
+
+# Node.js / TypeScript Frontend (Future Phases)
+node_modules/
+dist-frontend/
+.next/
+.vite/
+*.tsbuildinfo
+
+# Logs & Runtime Diagnostics
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# OS & Editor Specific (Block all .vscode/ files to prevent launch/task secret leaks)
+.DS_Store
+Thumbs.db
+Desktop.ini
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
