@@ -16,6 +16,19 @@ The goal is to create an assistant that understands ongoing work, retains useful
 
 These are the intended goals of the project, not claims that every capability is already implemented. Ann-E will evolve incrementally as its architecture and capabilities are developed and verified.
 
+## Engineering Portfolio
+
+This repository also includes a curated overview of selected Computer Engineering and Systems Engineering coursework, student-team experience, and personal prototyping work.
+
+- [Engineering project portfolio](projects/README.md)
+- [Embedded systems and ARM assembly](projects/embedded-systems/README.md)
+- [Autonomous maritime robotics](projects/autonomous-maritime-robotics/README.md)
+- [Formula SAE](projects/formula-sae/README.md)
+- [Systems Engineering decision analysis](projects/systems-engineering-decision-analysis/README.md)
+- [CAD and additive manufacturing](projects/cad-and-additive-manufacturing/README.md)
+
+Portfolio pages distinguish completed coursework/team experience from ongoing personal projects. Original source code, CAD files, and course deliverables will be added only when they are available and cleared for public sharing.
+
 ---
 
 *Ann-E is an independent development project.*
